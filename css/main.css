@@ -97,16 +97,112 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+    box-sizing: border-box;
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
+body {
+    padding: 3.5em 0 0 0;
 
+}
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
 
+img {
+    max-width: 100% 
+}
 
+.page-header {
+    background: #000;
+    color: #fff;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
+.page-header h1 {
+    margin: 0;
+}
 
+.page-header .main-nav {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
 
+.page-section {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+}
 
+.button {
+    display: inline-block;
+    font-size: 1.25em;
+    border: 0.125em solid #000;
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #000;
+}
+
+.button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.bigimage {
+    padding: 0;
+    position: relative;
+}
+
+.bigimage_image {
+    position: relative;
+    z-index: -10;
+    display: block;
+    width: 100%;
+}
+
+.bigimage_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+}
+
+.bigimage_text h2 {
+    margin-top: 0;
+    font-size: 3em;
+}
+.bigimage_text .button {
+    color: #fff;
+    border-color: #fff;
+
+}
+
+.bigimage_text .button:hover {
+    background-color: #fff;
+    color: #000;
+}
 
 
 
